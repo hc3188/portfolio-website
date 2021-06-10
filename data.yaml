@@ -8,11 +8,11 @@ links:
 pages:
   - type: gdoc
     title: Addicted to Tobacco Taxes
-    slug: first-project
+    slug: tobacco-taxes
     url: https://docs.google.com/document/d/1T-7jpH53NPIrMUH4jRFVmoWV9yPkeu0sUkKj3ba1T4M/edit?usp=sharing
   - type: gdoc
     title: Who Has Access To Mental Health Care in Rochester?
-    slug: second-project
+    slug: mental-health
     url: https://docs.google.com/document/d/1L7rYjNPsaQEZyD3YlLzAoTkQ_W5kZSDYDh4P0kay4ZQ/edit?usp=sharing
   - type: html
     title: Building the Rochester Dataset Part One
