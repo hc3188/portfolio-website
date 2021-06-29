@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Overlay Example</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+    <style>
+      #scrolly1 {
+        position: relative;
+        background-color: #f3f3f3;
+        padding: 1rem;
+        margin-bottom: 50px;
+      }
+
+      #scrolly2 {
+        position: relative;
+        background-color: #f3f3f3;
+        padding: 1rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 20rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #fcf9f9;
+        z-index: 0;
+        top: 12.5vh;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+
+      }
+
+      .sticky-thing p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+      .sticky-thing2 {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #fcf9f9;
+        z-index: 0;
+        top: 12.5vh;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+      }
+
+      .sticky-thing2 p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        color: #fff;
+        background-color: #fff;
+        
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active p {
+        background-color: rgb(252, 255, 81);
+        color: rgb(0, 0, 0);
+    
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        background-color: #22212183;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">Who Has Access To Mental Health Care in Rochester?</h1>
+        <p class="intro__dek">
+          Data shows those without cars have less access to private care.
+        </p>
+      </section>
+      <section id="pre-sticky">
+        <div>
+            <p class='pre-sticky'>On paper, New York state residents have better access to mental health care than most people in the country. The state has a high rate of licensed psychologists, a trend that reverberates across many counties, according to data from the American Psychological Association.</p>
+       </div>
+       <div>
+
+       </div>
+       <div><p class='pre-sticky'> But in reality, access to care can vary wildly for people living within a few miles of each other. Though conversations about access to care typically revolve around affordability and insurance coverage, another barrier has been lying in plain sight: travel time.
+      </p></div>
+             
+            <div>              <p class='pre-sticky'>Remote therapy has skyrocketed during the pandemic, but questions remain about how effective and popular it will remain in the long-term. Many therapists may return to in-person work when the pandemic passes and providers have concerns about the quality of care people receive remotely. And remote therapy is not accessible for everyone, either, as it requires broadband access and enough privacy to discuss confidential topics without being overheard. </p>
+            </div>
+              <p class= 'pre-sticky'>Access to mental health care has been particularly relevant in Rochester since last spring, when police there killed Daniel Prude while he was in their custody during a mental health crisis. 
+              </p>
+              <p class= 'pre-sticky'>Though there are 43 psychologists per 100,000 people in Monroe County, higher than the national average of 32, travel time to and from a private therapist can take longer than the appointment itself -- even for people within the Rochester city limits.</p>
+            </p>
+            </section>
+      <section id='scrolly1'>
+        <div class= 'sticky-thing2'>
+          <iframe title="Most Private Therapy Offices are in Adjacent Areas" aria-label="Stacked Column Chart" id="datawrapper-chart-L5Yu9" src="https://datawrapper.dwcdn.net/L5Yu9/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="665"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        </div>
+        <article>
+          <div class="step" data-step= "1">
+            <p> “In a car, in 15 minutes, you can get to most places in the city and the surrounding areas,” said Dr. Jack McIntyre, a physician on the Monroe County Medical Society Board of Directors. “In Rochester, public transportation is not that good (...) Getting to Brighton on the bus would be difficult for most people.” </p>
+          </p>
+          </p>
+          </div>
+          <div class="step" data-step="2">
+            <p>
+              Nearly half of all private therapists in Monroe County, home to more than 700,000, are in the Pearl-Meigs-Monroe neighborhood and the adjacent municipality of Brighton, according to Psychology Today, the most comprehensive directory for finding mental health professionals. 
+              </p>
+          </div>
+          <div class="step" data-step="3">
+            <p>The vast majority of offices outside of Rochester are in the suburbs to the Southeast, leaving residents of the city’s North and West sides and neighboring towns with fewer options.</p>
+          </div>
+          </div>
+        </article>
+
+      </section>
+      <section id = 'between-stickies'>
+<p class = 'between-stickies'>  People living in the city’s northern Homestead Heights neighborhood can expect travel times of 45-50 minutes to Brighton by bus, even though it’s only a 7.5 mile trip. The same trip would take 13 minutes by car, according to Google maps. The trip from Edgerton, a neighborhood on the city’s west side, can take an hour. Counting the return trip, travel time for a one hour psychiatric appointment can take up to twice as much time as the appointment itself, resulting in a three hour commitment, the kind of commitment that many low income and hourly workers cannot afford to make on a regular basis.</p>
+</p>
+<p class = 'between-stickies'> That’s due in part to the ways buses are routed through the city. Passengers have to transfer in the city’s downtown to get from one side of town to the other. According to Reconnect Rochester, a pro-public transit advocacy group, 25% of Rochester households do not own cars, roughly 50,000 people. Of the 475 private therapy offices listed in Monroe County on Psychology Today, 229 are in Brighton, a suburb to Rochester’s Southwest, and 70 are in the adjacent Pearl-Meigs-Monroe neighborhood. </p>
+
+      </section>
+      <section id="scrolly2">
+        <div class="sticky-thing">
+          <iframe title="Most Private Therapy Offices are in Adjacent Areas" aria-label="Stacked Column Chart" id="datawrapper-chart-L5Yu9"  src= 'https://api.mapbox.com/styles/v1/hc3188/cknnltktz1wcj17mzlzk7xl3s.html?fresh=true&title=view&access_token=pk.eyJ1IjoiaGMzMTg4IiwiYSI6ImNrbm5rb3lqaDB6cDkyc294MzdrbW5jczIifQ.bT_hQzxOu08OZSlHWk_rDw'
+            scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="665"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+
+        </div>
+    
+
+        <article>
+          <div class="step" data-step= "1">
+            <p> The map below shows a bus route connecting Edgerton, on the left, and the North side, right, to the Pearl-Meigs-Monroe neighborhood and Brighton. Travel times along these routes can be extensive despite relatively short geographic routes. A passenger boarding at Lexington Avenue can expect roughly 45 minutes of travel each way. A passenger boarding the bus near Route 104 in the city’s North section can expect similar travel times. Both routes connect to the southerly routes via transfer at the city center. 
+            </p>
+            <div class="step" data-step= "2">
+              <p>Dots represent the location of private therapy offices with street addresses listed on Psychology Today for which coordinates were available through the US Census Bureau. </p>
+          </div>
+          </div>
+        </article>
+      </section>
+      <section id='post-stickies'>
+<div></div>
+<p class= 'post-stickies'> Walking to and from the bus stop can also be problematic and time consuming. According to a 2017 report by Common Ground Health, a health research and planning organization for the Finger Lakes region of New York, transportation challenges were the second most common reason people didn’t seek care.</p>
+<p class= 'post-stickies'>“I always say riders are pedestrians,” said Jason Partyka, chairman of the Bus Workgroup at Reconnect Rochester. “We don’t get door-to-door service.”</p>
+<p class= 'post-stickies'>
+  The result is that many people have no choice but to go into the public health system or opt for no care at all, even if they have private health insurance. According to the 2019-2021 Monroe County Community Health Needs Assessment report conducted by the county health department, 44% of city residents have private health insurance. 
+  </p>
+<p class= 'post-stickies'>April Aycock, director of the Monroe County Office of Mental Health, said the public health system catered to 40,000 people in 2020, down from just over 42,000 in 2019. She said the decline could be due to programs closing as a result of the pandemic and the increase in teletherapy, though she doesn’t know for sure. 
+</p>
+<p class= 'post-stickies'>
+  “Consistently, since 2017, it has been 40,000 or higher,” Aycock said. “In a perfect world I would love for this number to be zero, because nobody is dealing with mental health concerns, but that's not realistic. We’ll see how the numbers increase in 2021 because it’s definitely been an increase of mental health symptoms as a result of multiple reasons such as the pandemic, racial injustices, and grief and loss.”
+  </p>
+<p class= 'post-stickies'>Aycock, who assumed her role as director three months ago, answered five of 13 questions posed regarding access to care. She did not answer questions about local funding for mental health care and efforts to expand care and access to care. She did not say specifically how the county evaluates the quality of mental health care in the public health system, but said that she hopes to audit outcomes reported by care contractors sometime this year.</p>
+<p class= 'post-stickies'>People can enter the public health system through a referral or as a result of a mental health crisis. Referrals can come from a patient, a provider or someone who knows the patient, like a family member or school. Last year, crisis response teams treated 9,000 people in the county.</p>
+<p class= 'post-stickies'>“What generally happens is people who are in emergency departments or inpatient, generally the person will have an appointment within five business days,” Aycock said. “Hospitals can also request priority access appointments or crisis appointments at our licensed clinics to fulfill this obligation or the person can access care by going to a walk in appointment. However, if that person misses that appointment, depending on the clinic, there may be a waitlist.”</p>
+<p class= 'post-stickies'>Aycock said she did not know how long the waitlist is.
+</p>
+<p class= 'post-stickies'>Some providers have tried to bridge the gap in care. When McIntyre opened his private practice 40 years ago on the West side of the city, he was one of the first private therapists to venture to the far shore of the Genesee River, which bisects the city on its way to Lake Eerie. </p>
+<p class= 'post-stickies'>“I looked at where private psychiatric offices were in the community and at that time every one of them was East of the river basically,” he said. “I said, well, it’s probably a good idea to open one on the West side of the city.”</p>
+<p class= 'post-stickies'>Today, there are more offices on that side of the city and other health care centers, like those affiliated with the University of Rochester, that offer mental health care. McIntyre said the process happened naturally over the decades as residential communities grew in those areas. He attributes the lop-sided distribution of offices to the fact that many therapists open private practices in neighborhoods where they anticipate there will be demand, which, in this case, is
+  different from need.
+  </p>
+<p class= 'post-stickies'>“A place a therapist might like to locate their office, people who are interested in therapy might be located in that area,” McIntyre said. “Park Ave is a trendy area (...) Therapists probably locate there because it’s a trendy area, a lot of it is an attractive area, a little bit like Soho [in New York City].”</p>
+<p class= 'post-stickies'>Data from the Centers for Disease Control and Prevention and Common Ground Health, show that mental health care is most badly needed in sections of the city with the least amount of access to private therapy. </p>
+<p class= 'post-stickies'>Over 20% of people in two neighborhoods that abut the city center to the North and West reported having poor mental health care for more than 14 days in a month. Despite being home to more than 23,000 people, only two private therapy offices are located in the corresponding zip codes, according to data from Psychology Today. </p>
+<p class= 'post-stickies'>An extensive 2018 Common Grounds report on health inequities in the Rochester area found that households earning $25,000 a year are much more likely to experience feelings of hopelessness, significant anger and demonstrate self-destructive behavior than households earning over $75,000.</p>
+<p class= 'post-stickies'>While remote therapy can increase access to care for people in areas without brick and mortar therapy offices, the medium is not a silver-bullet cure. There are two categories of remote therapy: therapy offered through an app or through a company that specializes in online therapy, like BetterHelp, and therapy offered by providers who practiced in-person until the pandemic. </p>
+<p class= 'post-stickies'>John C. Markowitz, research psychiatrist at the New York State Psychiatric Institute, says  therapy offered by the first group may not be as effective as in-person care, although the debate is far from settled, and practitioners in the second group are likely to return to in-person care as soon as they are able.
+</p>
+<p class= 'post-stickies'>
+  “Frankly, I don’t think any researchers (...) or clinicians were too comfortable treating severely ill patients at a distance. How do you know a suicidal patient doesn’t have a noose hanging outside of camera range?” Markowitz said. “A lot of psychiatrists and other health care providers can’t wait until we can go back to treating people in person, once it’s safe to do so.”</p>
+<p class= 'post-stickies'>There’s also the question of which providers are incentivized to practice through a service like BetterHelp and the quality of the provider-patient connection, a crucial factor in how effective treatment is. Proponents of teletherapy say it improves the connection by allowing the patient to engage with the provider at home and potentially lessens the stigma of seeking care, but Markowitz said many patients and providers dislike communicating through a computer as opposed to an immersive in-person experience.</p>
+<p class= 'post-stickies'>“I don’t know who works at teletherapy sites, but they’re presumably people who can’t manage fuller practices, so it’s probably not a recommendation,” Markowitz said. </p>
+<p class= 'post-stickies'>Tatiana Welch, a resident of the city’s northside, near Rochester General Hospital, has been struggling to find adequate care in the public health system for 12 years. Welch has been diagnosed with several mental health problems, including major depressive disorder, anxiety and obsessive compulsive disorder. She was also struggling with addiction when she moved to Rochester.</p>
+<p class= 'post-stickies'>“They wouldn’t help me because I didn’t want to go to group [therapy],” Welch said. 
+</p>
+<p class= 'post-stickies'>
+  She eventually found a doctor who referred her to the Woodward Health Center on the city’s Southwest side, where she saw a short-term therapist who connected her to her first regular therapist. 
+  </p>
+<p class= 'post-stickies'>Though Welch now has her own car, she used to rely on the bus to get her to and from her appointments, until one day she had a panic attack. </p>
+<p class= 'post-stickies'>
+  “I don’t like crowds. The bus was really packed,” she said. “I had to get off and someone had to come pick me up and take me to therapy that day.”
+  </p>
+<p class= 'post-stickies'>Since moving to Rochester, Welch has had seven different therapists and had two separate year-long stretches without one, because her providers often take high paying jobs elsewhere. </p>
+<p class= 'post-stickies'>
+  “Last time I lost my therapist, I lost my therapist for a whole year and we couldn’t find a therapist and when we did she was just so rude,” Welch said, explaining that when she doesn’t have a therapist her life is “absolutely more stressful. I don’t have that outlet.” 
+  </p>
+<p class= 'post-stickies'>
+  Despite her struggles finding care, Welch has been clean for 10-years and has two associates degrees, in addition to two Bachelor’s degrees from SUNY Brockport in psychology and English. She’s in the process of getting her Master’s in American Literature from Southern New Hampshire University. She’s also active in the community: she’s running for school board commissioner and she’s an active member of Community Justice Initiative, a community group fighting for equality and equity for people of color in Rochester. Welch has a list of accessible mental health providers she passes out when she’s organizing. Right now, she doesn’t have her regular care manager, the person in charge of coordinating care between her different doctors.
+  </p>
+<p class= 'post-stickies'>“The new lady, she really doesn’t do much, so I don’t really like her,” Welch said. “Certain paperwork frustrates me, the redundancy of the questions.” </p>
+
+      </section>
+
+      <section id="outro"></section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky.querySelector("p").innerText = el.dataset.step;
+      }
+
+      function init() {
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.95,
+            debug: true
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGMzMTg4IiwiYSI6ImNrbm5rb3lqaDB6cDkyc294MzdrbW5jczIifQ.bT_hQzxOu08OZSlHWk_rDw';
+    var map = new mapboxgl.Map({
+container: 'map', // container id
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [43.151,-77.586], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
